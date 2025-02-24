@@ -232,21 +232,21 @@ img.fullheight {
 	font-style: normal;
 	font-weight: 400;
 	font-display: block;
-	src: url('/fonts/Alegreya/AlegreyaSans-Light.ttf') format('truetype');
+	src: url('../fonts/Alegreya/AlegreyaSans-Light.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Alegreya-Light-Italic';
 	font-style: normal;
 	font-weight: 400;
 	font-display: block;
-	src: url('/fonts/Alegreya/AlegreyaSans-LightItalic.ttf') format('truetype');
+	src: url('../fonts/Alegreya/AlegreyaSans-LightItalic.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Alegreya';
 	font-style: normal;
 	font-weight: 400;
 	font-display: block;
-	src: url('/fonts/Alegreya/AlegreyaSans-Medium.ttf') format('truetype');
+	src: url('../fonts/Alegreya/AlegreyaSans-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -254,7 +254,7 @@ img.fullheight {
 	font-style: italic;
 	font-weight: 400;
 	font-display: block;
-	src: url('/fonts/Alegreya/AlegreyaSans-MediumItalic.ttf') format('truetype');
+	src: url('../fonts/Alegreya/AlegreyaSans-MediumItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -262,7 +262,7 @@ img.fullheight {
 	font-style: bold;
 	font-weight: 700;
 	font-display: block;
-	src: url('/fonts/Alegreya/AlegreyaSans-Bold.ttf') format('truetype');
+	src: url('../fonts/Alegreya/AlegreyaSans-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -270,19 +270,19 @@ img.fullheight {
 	font-style: normal;
 	font-weight: 700;
 	font-display: block;
-	src: url('/fonts/Alegreya/AlegreyaSans-BoldItalic.ttf') format('truetype');
+	src: url('../fonts/Alegreya/AlegreyaSans-BoldItalic.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Archivo';
-	src: url('/fonts/Archivo/Archivo.ttf') format('truetype');
+	src: url('../fonts/Archivo/Archivo.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Source';
-	src: url('/fonts/Source/SourceCodePro-Regular.ttf') format('truetype');
+	src: url('../fonts/Source/SourceCodePro-Regular.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Optotipo';
-	src: url('/fonts/Optotype/OptotypeVF.ttf') format('truetype');
+	src: url('../fonts/Optotype/OptotypeVF.ttf') format('truetype');
 }
 
 
