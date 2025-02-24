@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya';
+    --azul_claro_plus: #789af0;
+    --azul_claro: #648FFF;
+    --azul_oscuro: #101e41;
+    --azul_chido: #0047FF;
+    --rojo: #c9004a;
+    --gris: rgb(95, 101, 113);
+    --white: #f8f8f8;
+
+    --text-weight: 100;
+	--text-width: 100;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+}
+
+.presentation {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+.slide {
+    display: none; /* Hide all slides initially */
+    width: 100%;
+    height: 100%; /* Ensure slide takes full height */
+    background-size: cover;
+    background-position: center;
+}
+
+.slide.active {
+    display: block; /* Show the active slide */
+}
+
+.navbar {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-item:first-of-type {
+    background-color: red !important;
+    display: none;
+    /* position: absolute; */
+}
+
+.nav-item {
+    margin: 0 4px;
+    padding: 4px 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    filter: opacity(.85);
+    /* filter: drop-shadow(0 0 5px var(--white)); */
+    /* stroke: solid 3px black; */
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: .9em;
+}
+
+.nav-item.active {
+    background-color: var(--azul_claro); /* Highlight active page */
+    color: white;
+}
+.nav-item:hover {
+    background-color: var(--azul_chido); /* Highlight active page */
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100%; /* Ensure grid container takes full height */
+}
+
+.grid-item-1 {
+    grid-column: span 1; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-2 {
+    grid-column: span 2; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-3 {
+    grid-column: span 3; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-4 {
+    grid-column: span 4; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-5 {
+    grid-column: span 5; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-6 {
+    grid-column: span 6; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-7 {
+    grid-column: span 7; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-8 {
+    grid-column: span 8; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-9 {
+    grid-column: span 9; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-10 {
+    grid-column: span 10; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-11 {
+    grid-column: span 11; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item-12 {
+    grid-column: span 12; /* Adjust as needed */
+    height: 100%; /* Ensure grid item takes full height of its container */
+    align-items: center;
+    text-align: center;
+}
+.grid-item.v-center {
+    display: grid;
+    align-items: center;
+}
+.grid-item.titulo {
+    display: grid;
+    padding: 0px 100px;
+    align-items: center;
+    line-height: 1.3;
+}
+.grid-item.logos, .grid-item.datos-portada {
+    margin: 0% 20%;
+}
+/* .grid-item.logos {
+    background-image: url('/img/A-1-portada.svg');
+} */
+.hidden {
+    display: none;
+}
+
+
+/* COLORS */
+.black-bg {
+    background-color: black;
+}
+
+.white-txt {
+    color: white;
+}
+
+
+/* IMG */
+img.bg {
+    position: absolute;
+    filter: drop-shadow(0px 0px 30px var(--azul_chido));
+    z-index: 1;
+}
+img.bg-1 {
+    top: 5%;
+    left: -1%;
+    width: 30%;
+}
+img.bg-2 {
+    top: -5%;
+    right: 5%;
+    width: 20%;
+}
+img.bg-3 {
+    bottom: -5%;
+    left: 30%;
+    width: 40%;
+}
+img.fullheight {
+    height: 100%;
+}
+.photo-brath {
+    position: absolute;
+    bottom: 35%;
+    left: -25%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+/* FONTS & TEXT */
+
+@font-face {
+	font-family: 'Alegreya-Light';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('/fonts/Alegreya/AlegreyaSans-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Alegreya-Light-Italic';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('/fonts/Alegreya/AlegreyaSans-LightItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('/fonts/Alegreya/AlegreyaSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Alegreya-Italic';
+	font-style: italic;
+	font-weight: 400;
+	font-display: block;
+	src: url('/fonts/Alegreya/AlegreyaSans-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Alegreya-Bold';
+	font-style: bold;
+	font-weight: 700;
+	font-display: block;
+	src: url('/fonts/Alegreya/AlegreyaSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Alegreya-Bold-Italic';
+	font-style: normal;
+	font-weight: 700;
+	font-display: block;
+	src: url('/fonts/Alegreya/AlegreyaSans-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Archivo';
+	src: url('/fonts/Archivo/Archivo.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Source';
+	src: url('/fonts/Source/SourceCodePro-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Optotipo';
+	src: url('/fonts/Optotype/OptotypeVF.ttf') format('truetype');
+}
+
+
+.titulo-portada {
+    font-family: 'Alegreya-Bold';
+    font-size: 2em;
+    text-align: left;
+}
+
+.left {
+    text-align: left;
+}
+
+.datos-portada p {
+    font-variant: small-caps;
+    color: var(--azul_claro);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    line-height: 1.35;
+}
+.datos-portada p span {
+    color: white;
+}
+h1.pregunta-gral {
+    font-size: 2.5em;
+    font-family: 'Alegreya-Light';
+    color: var(--gris);
+}
+.pregunta-part {
+    color: var(--gris);
+    font-size: 1.75em;
+    font-family: 'Alegreya-Light';
+}
+.title-smllcps {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-family: 'Alegreya-Bold';
+    font-size: 1.6em;
+    color: var(--azul_chido);
+}
+
+.highlight-question:hover ~ .hidden {
+	display: block;
+}
+
+.highlight-question:hover {
+	font-weight: 900;
+	font-style: italic;
+	color: var(--azul_chido);
+	cursor: none;
+}
+.capitulo {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-family: 'Alegreya-Bold';
+    font-size: 1em;
+    color: var(--azul_oscuro);
+}
+.cap-num {
+    font-size: 8em;
+    margin-top: -10%;
+    color: var(--azul_oscuro);
+}
+.cap-title {
+    font-size: 1.75em;
+    color: var(--white);
+}
+.ref-5 {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    color: var(--azul_oscuro);
+}
+.texto-explicativo {
+    position: absolute;
+    font-family: 'Alegreya-Light-italic';
+    top: 5%;
+    left: 35%;
+    color: var(--azul_oscuro);
+    font-size: 2em;
+}
+.texto-explicativo span {
+    font-family: 'Alegreya-Bold-Italic';
+    color: var(--azul_chido);
+}
+.variable.font.demo-text p {
+    font-family: 'Archivo';
+    font-size: 15em;
+    cursor: auto;
+    font-stretch: var(--text-width);
+    font-weight: var(--text-weight);
+    font-variation-settings: "wght" var(--text-weight), "wdth" var(--text-width);
+}
+
+.demo {
+	display: inline-block;
+	margin: 110px 35px 25px;
+	font-size: 190px;
+	cursor: none;
+	font-family: 'Optotipo';
+	font-variation-settings: 'wght' 40, 'wdth' 750, 'slnt' 0;
+}
+
+.demo-optotipo.reg {
+	font-family: 'Optotipo';
+	font-variation-settings: 'wght' 40, 'wdth' 750, 'slnt' 0;
+}
+
+.demo-optotipo.bold {
+	font-variation-settings: 'wght' 70, 'wdth' 750, 'slnt' 0;
+	position: relative;
+}
+
+.demo-optotipo.bold::after {
+	content: 'M';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-family: 'Optotipo';
+	font-size: 190px;
+	font-variation-settings: 'wght' 150, 'wdth' 750, 'slnt' 0;
+}
+
+.demo-optotipo:hover ~ #limen-dif {
+	display: block;
+}
+
+.demo-optotipo:hover ~ .demo-optotipo.bold::after {
+	display: none;
+}
+
