@@ -65,3 +65,11 @@ sliders.forEach(slider => {
     output.innerHTML = this.value;
     };
 });
+
+
+
+
+document.getElementById('toggleGroup1').addEventListener('click', function() {
+    const group1 = document.getElementById('Pros');
+    group1.style.display = group1.style.display === 'none' ? 'block' : 'none';
+});
