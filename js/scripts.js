@@ -40,7 +40,7 @@ idoneidad.addEventListener("click", function(e){
     var atributos = document.querySelectorAll(".hidden");
     // document.querySelector("h1.first").style.color = "#5f6571";
     // document.querySelector("#idoneo").style.color = "var(--orange)";
-    document.querySelector("#idoneo").style.cssText = "color: var(--azul_chido); font-weight: 900; font-style: italic";
+    document.querySelector("#idoneo").style.cssText = "color: var(--azul_chido); font-family: 'Alegreya-Bold-Italic'";
     atributos.forEach((e) => e.style.display = "block");
 });
 

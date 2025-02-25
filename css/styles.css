@@ -288,7 +288,7 @@ img.fullheight {
 
 .titulo-portada {
     font-family: 'Alegreya-Bold';
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: left;
 }
 
@@ -296,12 +296,16 @@ img.fullheight {
     text-align: left;
 }
 
+.datos-portada {
+    z-index: 99;
+}
 .datos-portada p {
     font-variant: small-caps;
     color: var(--azul_claro);
     margin-bottom: 15px;
     letter-spacing: 1px;
     line-height: 1.35;
+    font-size: 1.15em;
 }
 .datos-portada p span {
     color: white;
@@ -313,14 +317,14 @@ h1.pregunta-gral {
 }
 .pregunta-part {
     color: var(--gris);
-    font-size: 1.75em;
-    font-family: 'Alegreya-Light';
+    font-size: 1.9em;
+    font-family: 'Alegreya';
 }
 .title-smllcps {
     font-variant: small-caps;
     letter-spacing: 1px;
     font-family: 'Alegreya-Bold';
-    font-size: 1.6em;
+    font-size: 1.85em;
     color: var(--azul_chido);
 }
 
@@ -329,8 +333,7 @@ h1.pregunta-gral {
 }
 
 .highlight-question:hover {
-	font-weight: 900;
-	font-style: italic;
+	font-family: 'Alegreya-Bold-Italic';
 	color: var(--azul_chido);
 	cursor: none;
 }
@@ -338,7 +341,7 @@ h1.pregunta-gral {
     font-variant: small-caps;
     letter-spacing: 1px;
     font-family: 'Alegreya-Bold';
-    font-size: 1em;
+    font-size: 1.35em;
     color: var(--azul_oscuro);
 }
 .cap-num {
@@ -347,7 +350,7 @@ h1.pregunta-gral {
     color: var(--azul_oscuro);
 }
 .cap-title {
-    font-size: 1.75em;
+    font-size: 1.85em;
     color: var(--white);
 }
 .ref-5 {
@@ -357,10 +360,11 @@ h1.pregunta-gral {
     color: var(--azul_oscuro);
 }
 .texto-explicativo {
-    position: absolute;
+    /* position: absolute; */
     font-family: 'Alegreya-Light-italic';
-    top: 5%;
-    left: 35%;
+    /* top: 5%;
+    left: 35%; */
+    margin: 1.7em 0;
     color: var(--azul_oscuro);
     font-size: 2em;
 }
