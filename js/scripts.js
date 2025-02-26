@@ -71,5 +71,5 @@ sliders.forEach(slider => {
 
 document.getElementById('toggleGroup1').addEventListener('click', function() {
     const group1 = document.getElementById('Pros');
-    group1.style.display = group1.style.display === 'none' ? 'block' : 'none';
+    group1.style.display = group1.style.display === 'block' ? 'none' : 'block';
 });
